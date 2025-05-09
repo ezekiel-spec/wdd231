@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Web Frontend Development I - Course Home Page">
+    <meta name="author" content="Your Name">
     <title>WDD 231 Home</title>
-    <link rel="stylesheet" href="styles/style.css"> <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/main.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>WDD 231 - Web Frontend Development I</h1>
-        <nav>
-            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
-            <ul id="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="#">Resources</a></li>
-            </ul>
-        </nav>
+        <img src="C:\Users\USER\wdd231\styles\scripts\417e7a42-c277-4707-9965-378257b4cb84.jpeg" alt="BYU-I logo">
+        <span>Ezekiel Augustine</span>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="course-list">
+        <h1>WDD 231 - Web Frontend Development I</h1>
+
+        <section id="section1">
             <h2>Available Courses</h2>
-            <div id="courses-container">
-                <!-- Course cards will be dynamically inserted here -->
-                <div class="course-card">
-                    <h3>Course 1</h3>
-                    <p>Course description goes here.</p>
-                </div>
-                <div class="course-card">
-                    <h3>Course 2</h3>
-                    <p>Course description goes here.</p>
-                </div>
+            <div class="course-list">
+                <!-- Dynamically populated courses will go here -->
             </div>
+        </section>
+
+        <section id="section2">
+            <h2>Resources</h2>
+            <p>Resources will go here.</p>
+        </section>
+
+        <section id="section3">
+            <h2>Course 1</h2>
+            <p>Course description goes here.</p>
+            <h2>Course 2</h2>
+            <p>Course description goes here.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> | Your Name | Last Updated: <span id="lastModified"></span></p>
+        <p>© <span id="currentYear"></span> | Your Name | Last Updated: <span id="lastModified"></span></p>
     </footer>
-
-    <script src="scripts/main.js"></script> <!-- Link to JS -->
 </body>
+
 </html>
