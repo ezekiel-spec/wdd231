@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231 Home</title>
+    <link rel="stylesheet" href="styles/style.css"> <!-- Link to CSS -->
 </head>
 <body>
-    <h1>Hello WDD 231!</h1>
-    <p>This is my first GitHub Pages website for WDD 231.</p>
+    <header>
+        <h1>WDD 231 - Web Frontend Development I</h1>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="course-list">
+            <h2>Available Courses</h2>
+            <div id="courses-container">
+                <!-- Course cards will be dynamically inserted here -->
+                <div class="course-card">
+                    <h3>Course 1</h3>
+                    <p>Course description goes here.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Course 2</h3>
+                    <p>Course description goes here.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Your Name | Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/main.js"></script> <!-- Link to JS -->
 </body>
 </html>

@@ -1,0 +1,79 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav button {
+    display: none; /* Initially hide the mobile menu toggle */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#courses-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    /* Responsive Navigation */
+    nav button {
+        display: block; /* Show the menu toggle on small screens */
+    }
+
+    nav ul {
+        display: none; /* Hide menu on mobile */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    /* Adjust course card layout on small screens */
+    #courses-container {
+        flex-direction: column;
+    }
+
+    .course-card {
+        width: 100%;
+    }
+}
