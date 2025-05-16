@@ -1,49 +1,42 @@
-// 1. Display the current year and last modified date
-document.getElementById('currentYear').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
-
-// 2. Course data array
 const courses = [
-    { title: 'Course 1', description: 'Course description goes here.', completed: true, credits: 3 },
-    { title: 'Course 2', description: 'Course description goes here.', completed: false, credits: 4 }
-];
-
-// 3. Display courses dynamically
-const courseList = document.querySelector('.course-list');
-
-courses.forEach(course => {
-    const courseCard = document.createElement('div');
-    courseCard.classList.add('course-card');
-    courseCard.innerHTML = `
-        <h3>${course.title}</h3>
-        <p>${course.description}</p>
-        <p>Credits: ${course.credits}</p>
-        ${course.completed ? '<p class="completed">Completed</p>' : '<p class="not-completed">Not Completed</p>'}
-    `;
-    courseList.appendChild(courseCard);
-});
-
-// 4. Optional: Add course filtering
-function filterCourses(filter) {
-    const filteredCourses = courses.filter(course => {
-        if (filter === 'All') return true;
-        if (filter === 'WDD' && course.title.includes('WDD')) return true;
-        if (filter === 'CSE' && course.title.includes('CSE')) return true;
-        return false;
-    });
-
-    courseList.innerHTML = '';  // Clear current course list
+    { code: "CSE 121b", name: "JavaScript Language", credits: 3, subject: "CSE", completed: true },
+    { code: "CSE 110", name: "Intro to Programming", credits: 2, subject: "CSE", completed: false },
+    { code: "WDD 130", name: "Web Fundamentals", credits: 2, subject: "WDD", completed: true },
+    { code: "WDD 231", name: "Frontend Development", credits: 3, subject: "WDD", completed: false },
+    { code: "CIT 111", name: "Intro to IT", credits: 3, subject: "CIT", completed: true }
+  ];
+  
+  const courseList = document.getElementById("courseList");
+  const totalCredits = document.getElementById("totalCredits");
+  const buttons = document.querySelectorAll("#filters button");
+  
+  function displayCourses(filtered = "all") {
+    courseList.innerHTML = "";
+    let filteredCourses = courses.filter(course => filtered === "all" || course.subject === filtered);
+  
     filteredCourses.forEach(course => {
-        const courseCard = document.createElement('div');
-        courseCard.classList.add('course-card');
-        courseCard.innerHTML = `
-            <h3>${course.title}</h3>
-            <p>${course.description}</p>
-            <p>Credits: ${course.credits}</p>
-            ${course.completed ? '<p class="completed">Completed</p>' : '<p class="not-completed">Not Completed</p>'}
-        `;
-        courseList.appendChild(courseCard);
-}
-
-// Example usage: Filter by "WDD" courses
-filterCourses('WDD');
+      const li = document.createElement("li");
+      li.textContent = `${course.code} - ${course.name}`;
+      if (course.completed) li.classList.add("completed");
+      courseList.appendChild(li);
+    });
+  
+    const total = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    totalCredits.textContent = total;
+  }
+  
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      displayCourses(btn.dataset.subject);
+    });
+  });
+  
+  displayCourses();
+  
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = document.lastModified;
+  
+  document.getElementById("menu").addEventListener("click", () => {
+    document.querySelector(".navigation").classList.toggle("show");
+  });
+  

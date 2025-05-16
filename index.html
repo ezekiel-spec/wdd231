@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 Web Frontend Development I - Course Home Page">
-    <meta name="author" content="Your Name">
-    <title>WDD 231 Home</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script defer src="scripts/main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bwari . Abuja | Nigeria Course Homepage" />
+  <title>Bwari . Abuja | Nigeria - WDD 231</title>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
-
 <body>
-    <header>
-        <img src="C:\Users\USER\wdd231\styles\scripts\images\BYU-logo.jpeg" alt="BYU-I logo">
-        <span>Ezekiel Augustine</span>
-    </header>
-
+  <header>
+    <img src="C:\Users\USER\wdd231\styles\scripts\images\Ezekiel Augustine.jpg" alt="Bwari . Abuja | Nigeria" />
+    <h1>Ezekiel | Daniel | Augustine</h1>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Final</a></li>
-            <li><a href="#">GitHub Profile</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </ul>
+      <button id="menu" aria-label="Menu"></button>
+      <ul class="navigation">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Course Work</a></li>
+        <li><a href="https://ezekiel-spec.github.io/wdd231/">GitHub Profile</a></li>
+        <li><a href="www.linkedin.com/in/ezekiel-augustine-1502502a3">LinkedIn</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <h1>WDD 231 - Web Frontend Development I</h1>
+  <main>
+    <section class="intro">
+      <h2>Course Work</h2>
+      <img src="C:\Users\USER\wdd231\styles\scripts\images\A grand entrance to a vibrant city! This photo….jpeg" alt="Abuja, Nigeria" />
+      <p>Abuja, Nigeria</p>
+    </section>
 
-        <section id="section1">
-            <h2>Available Courses</h2>
-            <div class="course-list">
-                <!-- Dynamically populated courses will go here -->
-            </div>
-        </section>
+    <section class="courses">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div id="filters">
+        <button data-subject="all">All</button>
+        <button data-subject="WDD">WDD</button>
+        <button data-subject="CSE">CSE</button>
+        <button data-subject="CIT">CIT</button>
+      </div>
+      <ul id="courseList"></ul>
+      <p>Total Credits: <span id="totalCredits">0</span></p>
+    </section>
+  </main>
 
-        <section id="section2">
-            <h2>Resources</h2>
-            <p>Resources will go here.</p>
-        </section>
+  <footer>
+    <p>&copy; <span id="year"></span> Bwari . Abuja | Nigeria</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
 
-        <section id="section3">
-            <h2>Course 1</h2>
-            <p>Course description goes here.</p>
-            <h2>Course 2</h2>
-            <p>Course description goes here.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© <span id="currentYear"></span> | Your Name | Last Updated: <span id="lastModified"></span></p>
-    </footer>
+  <script src="scripts/scripts.js"></script>
 </body>
-
 </html>

@@ -1,86 +1,102 @@
-/* Normalize CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header {
+  }
+  
+  header {
+    background: #003049;
+    color: white;
+    padding: 1rem;
     text-align: center;
-    margin: 20px 0;
-}
-
-header img {
-    width: 50px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-header span {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-nav {
-    background-color: #333;
-    padding: 10px 0;
-}
-
-nav ul {
+  }
+  
+  header img {
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  nav {
+    position: relative;
+  }
+  
+  #menu {
+    display: none;
+    background: transparent;
+    border: none;
+  }
+  
+  .navigation {
+    list-style: none;
     display: flex;
     justify-content: center;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
+    gap: 1rem;
+  }
+  
+  .navigation a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-nav ul li a:hover {
-    background-color: #575757;
-}
-
-main {
-    padding: 20px;
-}
-
-h1, h2 {
+  }
+  
+  .navigation a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .intro,
+  .courses {
+    padding: 1rem;
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.course-list {
+  }
+  
+  #courseList {
+    list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-footer {
-    text-align: center;
-    background-color: #333;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  #courseList li {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background: #8d99ae;
     color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+    border-radius: 5px;
+  }
+  
+  .completed {
+    background-color: #2a9d8f;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #003049;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .navigation {
+      display: none;
+      flex-direction: column;
     }
-}
+  
+    .navigation.show {
+      display: flex;
+    }
+  
+    #menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1rem;
+    }
+  }
+  
