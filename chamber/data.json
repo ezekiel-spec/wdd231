@@ -1,0 +1,25 @@
+{
+  "businesses": [
+    {
+      "name": "Alpha Tech Solutions",
+      "address": "123 Innovation Way, Bwari",
+      "phone": "+234 801 234 5678",
+      "website": "https://alphatech.com",
+      "image": "images/alpha-tech.jpg"
+    },
+    {
+      "name": "Green Market Groceries",
+      "address": "45 Fresh Avenue, Bwari",
+      "phone": "+234 802 345 6789",
+      "website": "https://greenmarket.com",
+      "image": "images/green-market.jpg"
+    },
+    {
+      "name": "Bwari Legal Chambers",
+      "address": "78 Justice Road, Bwari",
+      "phone": "+234 803 456 7890",
+      "website": "https://bwarilegal.com",
+      "image": "images/bwari-legal.jpg"
+    }
+  ]
+}

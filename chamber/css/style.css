@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background: #007acc;
+  color: white;
+  padding: 1em;
+}
+
+nav ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+nav .active {
+  font-weight: bold;
+}
+
+.view-toggle {
+  margin: 1em 0;
+}
+
+#members.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+}
+
+#members.list {
+  display: block;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 1em;
+  background: #f9f9f9;
+}
+
+.card img {
+  max-width: 100px;
+  height: auto;
+}

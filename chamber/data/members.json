@@ -1,0 +1,54 @@
+
+{
+  "members": [
+    {
+      "name": "Jumia Nigeria",
+      "image": "chamber/images/jumia-logo.jpeg",
+      "address": "Lagos, Nigeria",
+      "phone": "+234-700-600-0000",
+      "website": "chamber/images/jumia-logo.jpeg"
+    },
+    {
+      "name": "Konga",
+      "image": "chamber/images/konga-logo.jpeg",
+      "address": "Ikeja, Lagos",
+      "phone": "+234-1-270-9339",
+      "website": "https://www.konga.com"
+    },
+    {
+      "name": "GTBank",
+      "image": "chamber/wdd231_chamber_directory/images/gtbank-logo.png",
+      "address": "Victoria Island, Lagos",
+      "phone": "+234-700-48266",
+      "website": "https://www.gtbank.com"
+    },
+    {
+      "name": "Dangote Group",
+      "image": "dangote-logo.png",
+      "address": "Ikoyi, Lagos",
+      "phone": "+234-1-448-0815",
+      "website": "https://www.dangote.com"
+    },
+    {
+      "name": "Innoson Vehicle Manufacturing",
+      "image": "innoson-logo.png",
+      "address": "Umuahia Road, Enugu",
+      "phone": "+234-803-555-5555",
+      "website": "https://www.innosongroup.com"
+    },
+    {
+      "name": "Paystack",
+      "image": "paystack-logo.png",
+      "address": "Yaba, Lagos",
+      "phone": "+234-1-631-6160",
+      "website": "https://www.paystack.com"
+    },
+    {
+      "name": "Flutterwave",
+      "image": "flutterwave-logo.png",
+      "address": "Lekki, Lagos",
+      "phone": "+234-1-631-6161",
+      "website": "https://www.flutterwave.com"
+    }
+  ]
+}
