@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Directory</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/directory.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business Directory</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/directory.css">
 </head>
 <body>
-    <header>
-        <h1>Bwari Chamber of Commerce</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="directory.html">Directory</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Business Directory</h2>
-        <div class="menu">
-            <button id="grid">Grid View</button>
-            <button id="list">List View</button>
-        </div>
-        <article class="grid"></article>
-    </main>
-    <footer>
-        <p>&copy; 2025 Bwari Chamber of Commerce | Ezekiel Daniel Augustine | WDD 231</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-    </footer>
-    <script src="scripts/directory.js"></script>
-    <script>
-        document.getElementById("lastModified").textContent = document.lastModified;
-    </script>
+  <header>
+    <h1>Bwari Chamber of Commerce</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Business Directory</h2>
+    
+    <div class="menu">
+      <button id="grid">Grid View</button>
+      <button id="list">List View</button>
+    </div>
+
+    <section class="directory grid">
+      <div class="business-card">
+        <img src="C:\Users\USER\wdd231\chamber\images\alpha-logo.jpeg" alt="Logo of Alpha Tech Solutions">
+        <h3>Alpha Tech Solutions</h3>
+        <p>123 Innovation Way, Bwari</p>
+        <p>+234 801 234 5678</p>
+        <a href="lijay.com" target="_blank">Visit Website</a>
+      </div>
+
+      <div class="business-card">
+        <img src="C:\Users\USER\wdd231\chamber\images\market-abuja.jpeg" alt="Logo of Green Market Groceries">
+        <h3>Green Market Groceries</h3>
+        <p>45 Fresh Avenue, Bwari</p>
+        <p>+234 802 345 6789</p>
+        <a href="https://www.greenmarket.com.ng/" target="_blank">Visit Website</a>
+      </div>
+
+      <div class="business-card">
+        <img src="C:\Users\USER\wdd231\chamber\images\legal-district.jpeg" alt="Logo of Bwari Legal Chambers">
+        <h3>Bwari Legal Chambers</h3>
+        <p>78 Justice Road, Bwari</p>
+        <p>+234 803 456 7890</p>
+        <a href="https://lawnigeria.com/2019/10/31/law-firms-in-bwari-abuja-federal-capital-territory-fct-nigeria/" target="_blank">Visit Website</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bwari Chamber of Commerce | Ezekiel Daniel Augustine | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/directory.js"></script>
+  <script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
 </body>
 </html>
