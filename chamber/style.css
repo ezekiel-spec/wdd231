@@ -1,0 +1,65 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+nav a {
+  margin: 0 1em;
+  color: white;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+form {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 1em;
+}
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+form input, form textarea, form select {
+  width: 100%;
+  margin-top: 0.2em;
+}
+.cards {
+  flex: 1;
+  min-width: 250px;
+}
+.card {
+  background: #ccc;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  animation: fadein 2s ease;
+}
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: white;
+  padding: 1em;
+  border: 2px solid black;
+  z-index: 1000;
+  display: none;
+}
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+}

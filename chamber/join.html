@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join | Bwari Chamber</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bwari Chamber of Commerce</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="join.html" class="active">Join</a>
+    </nav>
+  </header>
+  <main>
+    <form method="get" action="thankyou.html">
+      <h2>Membership Application Form</h2>
+      <label>First Name:
+        <input type="text" name="fname" title="First Name" autocomplete="given-name" required />
+      </label>
+      <label>Last Name:
+        <input type="text" name="lname" title="Last Name" autocomplete="family-name" required />
+      </label>
+      <label>Title:
+        <input type="text" name="title" title="Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+      </label>
+      <label>Email:
+        <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@email.com" required />
+      </label>
+      <label>Cell Phone:
+        <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required />
+      </label>
+      <label>Organization:
+        <input type="text" name="organization" title="Organization" autocomplete="organization" required />
+      </label>
+      <label>Membership Level:
+        <select name="level" title="Membership Level" required>
+          <option value="np">NP Membership</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+      <label>Description:
+        <textarea name="description" title="Business Description"></textarea>
+      </label>
+      <input type="hidden" id="timestamp" name="timestamp" />
+      <input type="submit" value="Apply for Membership" />
+    </form>
+
+    <section class="cards">
+      <h2>Membership Levels</h2>
+      <div class="card" id="np">
+        <h3>Non Profit Membership Level</h3>
+        <button type="button" onclick="showModal('npModal')">Learn More</button>
+      </div>
+      <div class="card" id="bronze">
+        <h3>Bronze Membership Level</h3>
+        <button type="button" onclick="showModal('bronzeModal')">Learn More</button>
+      </div>
+      <div class="card" id="silver">
+        <h3>Silver Membership Level</h3>
+        <button type="button" onclick="showModal('silverModal')">Learn More</button>
+      </div>
+      <div class="card" id="gold">
+        <h3>Gold Membership Level</h3>
+        <button type="button" onclick="showModal('goldModal')">Learn More</button>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal" id="npModal"><p>Non-profit organizations receive free event invites and monthly newsletters.</p><button onclick="hideModal('npModal')">Close</button></div>
+    <div class="modal" id="bronzeModal"><p>Bronze members get discounted event access and business directory listing.</p><button onclick="hideModal('bronzeModal')">Close</button></div>
+    <div class="modal" id="silverModal"><p>Silver members get premium directory placement and event sponsorship options.</p><button onclick="hideModal('silverModal')">Close</button></div>
+    <div class="modal" id="goldModal"><p>Gold members receive homepage spotlight, banner ads, and special consulting sessions.</p><button onclick="hideModal('goldModal')">Close</button></div>
+  </main>
+  <footer><p>&copy; 2025 Bwari Chamber of Commerce</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
