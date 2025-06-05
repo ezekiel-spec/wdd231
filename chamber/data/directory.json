@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Zuma Cafe",
+    "address": "123 Main St, Bwari",
+    "description": "A cozy place for coffee and snacks.",
+    "image": "company1.webp"
+  },
+  {
+    "name": "Bwari Hardware",
+    "address": "456 Tool Rd, Bwari",
+    "description": "All your hardware needs in one place.",
+    "image": "company2.webp"
+  },
+  {
+    "name": "EduBooks Nigeria",
+    "address": "789 Library Ave, Bwari",
+    "description": "Your trusted bookstore.",
+    "image": "company3.webp"
+  },
+  {
+    "name": "Green Farmers Market",
+    "address": "101 Farm Ln, Bwari",
+    "description": "Fresh produce direct from local farmers.",
+    "image": "company4.webp"
+  },
+  {
+    "name": "BrightTech Computers",
+    "address": "202 Tech Blvd, Bwari",
+    "description": "Computers and accessories store.",
+    "image": "company5.webp"
+  },
+  {
+    "name": "Royal Touch Salon",
+    "address": "303 Beauty St, Bwari",
+    "description": "Quality hair and beauty services.",
+    "image": "company6.webp"
+  },
+  {
+    "name": "Sunshine Bakery",
+    "address": "404 Bread Rd, Bwari",
+    "description": "Freshly baked goods daily.",
+    "image": "company7.webp"
+  },
+  {
+    "name": "Musa's Tailoring",
+    "address": "505 Stitch Ave, Bwari",
+    "description": "Custom tailoring and alterations.",
+    "image": "company8.webp"
+  }
+]
