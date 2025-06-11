@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Subscribe to updates from World Travel Destinations." />
+  <meta name="author" content="Ezekiel Daniel Augustine" />
+  <title>Subscribe</title>
+  <link rel="stylesheet" href="styles/base.css" />
+</head>
+<body>
+  <header>
+    <h1>World Travel Destinations</h1>
+    <nav>
+      <button id="menuBtn">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="form.html" class="active">Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Subscribe</h2>
+    <form action="formaction.html" method="get">
+      <fieldset>
+        <legend>Subscription Form</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="interest">What destination are you most interested in?</label>
+        <input type="text" id="interest" name="interest" />
+
+      </fieldset>
+
+      <button type="submit">Subscribe</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 World Travel Destinations | <a href="attributions.html">Attributions</a></p>
+    <a href="https://your-video-link.com" target="_blank">Video Demo</a>
+  </footer>
+</body>
+</html>

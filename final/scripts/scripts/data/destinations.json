@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Paris",
+    "country": "France",
+    "description": "The City of Light, famous for the Eiffel Tower, museums, and cuisine.",
+    "image": "images/Paris.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Tokyo",
+    "country": "Japan",
+    "description": "A vibrant city blending tradition with futuristic technology.",
+    "image": "images/Tokyo.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Cairo",
+    "country": "Egypt",
+    "description": "Home to ancient pyramids and the Nile River.",
+    "image": "images/Cairo.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "New York City",
+    "country": "USA",
+    "description": "The city that never sleeps, full of culture, food, and landmarks.",
+    "image": "images/New-York-City.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Cape Town",
+    "country": "South Africa",
+    "description": "Known for Table Mountain, beaches, and vineyards.",
+    "image": "images/Cape-Town.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Rome",
+    "country": "Italy",
+    "description": "A city full of ancient ruins, art, and delicious food.",
+    "image": "images/Rome.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Rio de Janeiro",
+    "country": "Brazil",
+    "description": "Famous for Carnival, beaches, and Christ the Redeemer.",
+    "image": "images/Rio-de-Janeiro.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Sydney",
+    "country": "Australia",
+    "description": "Known for the Sydney Opera House and beautiful beaches.",
+    "image": "images/Sydney.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Reykjavik",
+    "country": "Iceland",
+    "description": "Gateway to glaciers, geysers, and the Northern Lights.",
+    "image": "images/Reykjavik.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Bangkok",
+    "country": "Thailand",
+    "description": "Bustling city with temples, street food, and floating markets.",
+    "image": "images/Bangkok.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Barcelona",
+    "country": "Spain",
+    "description": "Known for Gaudí architecture and Mediterranean beaches.",
+    "image": "images/Barcelona.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Vancouver",
+    "country": "Canada",
+    "description": "A coastal city with mountains, parks, and urban life.",
+    "image": "images/Vancouver.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Istanbul",
+    "country": "Turkey",
+    "description": "A historical city bridging Europe and Asia.",
+    "image": "images/Istanbul.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Dubai",
+    "country": "UAE",
+    "description": "Modern skyscrapers, luxury shopping, and desert safaris.",
+    "image": "images/Dubai.jpeg"
+  },
+  {
+    "id": 15,
+    "name": "Lima",
+    "country": "Peru",
+    "description": "Rich in culture, history, and culinary delights.",
+    "image": "images/Lima.jpeg"
+  }
+]
